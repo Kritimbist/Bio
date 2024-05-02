@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px 0;
+        }
+        
+        section {
+            padding: 40px 0;
+        }
+        
+        h2 {
+            text-align: center;
+        }
+        
+        img {
+            display: block;
+            margin: auto;
+            max-width: 200px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#bio">Bio</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="bio">
+        <div class="container">
+            <h2>Short Bio</h2>
+            <img src ="C:\Users\ACER\Desktop\image_mine.jpg" alt="Kritim Bista">
+            <p>Computer Science student at Madan Bhandari Memorial College(2025). Passionate about creating user-friendly and efficient software. Always looking for new challenges and opportunities to learn.</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <h2>Education History</h2>
+            <table>
+                <tr>
+                    <th>Degree</th>
+                    <th>Institution</th>
+                    <th>Year</th>
+                </tr>
+                <tr>
+                    <td>Bachelor's in Computer Science</td>
+                    <td>Tribhuwan University</td>
+                    <td>Graduated: 2028</td>
+                </tr>
+                <tr>
+                    <td>Higher secondary level</td>
+                    <td>Xavier International College</td>
+                    <td>2023</td>
+                </tr>
+                <tr>
+                    <td>SEE</td>
+                    <td>Dover Englsih Boarding</td>
+                    <td>2021</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </table>
+        </div>
+    </section>
+
+    <section id="interests">
+        <div class="container">
+            <h2>Interest and Hobbies</h2>
+            <ul>
+                <li>My hobbies include hiking, photography, and playing the guitar.</li> 
+              <li> In my free time, I enjoy reading science fiction novels</li>
+              <li> Exploring new things</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Kritim Bista</p>
+       
+        </div>
+    </footer>
+
+</body>
+</html>
